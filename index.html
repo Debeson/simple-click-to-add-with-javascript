@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div>
+            <h1>Click the button</h1>
+            <div id="count">0</div>
+            
+            <span>
+                <button onclick="increaseCount()">+</button>
+                <button onclick="decreaseCount()">-</button>
+                <button onclick="reset()">reset</button>
+            </span>
+            
+        </div>
+    </section>
+    <script>
+        let count = 0;
+
+        function increaseCount(){
+
+            if (count < 10){
+                count++;
+                document.getElementById("count").innerHTML = count;
+            }else {
+                alert(`you have reach the maximum count of ${count}`);
+            }
+
+            
+        }
+
+        function decreaseCount(){
+
+            if (count > 0){
+                count--;
+                document.getElementById("count").innerHTML = count;
+            }else {
+                alert(`cannot go lower than ${count}`);
+            }
+        
+        }
+
+        function reset(){
+            
+            count = 0;
+            document.getElementById("count").innerHTML = count;
+        }
+
+
+
+
+        
+    </script>
+</body>
+</html>
