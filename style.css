@@ -1,3 +1,13 @@
+body{
+    background-color: white;
+    color: black;
+}
+
+body.dark{
+    background-color: black;
+    color: white;
+}
+
 section{
     display: flex;
     justify-content: center;
@@ -34,3 +44,8 @@ p{
     color: red;
     text-transform: uppercase;
 }
+.circle{
+    padding: 1.8rem;
+    border-radius: 100%;
+}
+
