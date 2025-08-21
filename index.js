@@ -30,9 +30,9 @@ function decreaseCount(){
 
 // reset the count to zero 
 function reset(){
-    
     count = 0;
     document.getElementById("count").innerHTML = count;
+    checkEvenOdd();
 }
 
 // auto increse the count every 2 seconds
