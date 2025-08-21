@@ -15,22 +15,24 @@ section{
     height: 100vh;
     gap: 20px;
 }
-div{
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 h1{
     font-size: 3rem;
-    color: #333;
 }
-div{
+
+.count-value, .container{
     padding: 10px;
     font-size: 1.2rem;
     border: 2px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 20px;
 }
+
 button{
     padding: 10px 20px;
     font-size: 1.2rem;
@@ -44,6 +46,21 @@ p{
     color: red;
     text-transform: uppercase;
 }
+
+.input-group{
+    margin-top: 20px;
+}
+
+input{
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #28a745;
+}
+
+input:focus{
+    outline: none;
+}
+
 .circle{
     padding: 1.8rem;
     border-radius: 100%;

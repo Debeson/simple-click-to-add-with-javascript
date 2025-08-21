@@ -9,17 +9,22 @@
 </head>
 <body>
     <section>
-        <div>
+        <div class="container">
             <h1>Click the button</h1>
-            <div id="count">0</div>
+            <div class="count-value" id="count">0</div>
             <P id="number"></P>
             
             <span>
                 <button onclick="increaseCount()">+</button>
                 <button onclick="decreaseCount()">-</button>
                 <button onclick="reset()">reset</button>
-                <button id="auto" onclick="autoIncrease()">Auto</button>
+                <button id="auto" onclick="autoIncrease()">Auto+</button>
             </span>
+
+            <div class="input-group">
+                <input type="number" id="input" placeholder="pick a number">
+                <button onclick="setCount()">Set Count</button>
+            </div>
 
             <h2>Toggle Button</h2>
             <button class="circle" id="toggle-button"></button>
@@ -28,7 +33,10 @@
     </section>
 
 
-
+<script>
+    let userInput = document.getElementById("input").value;
+    console.log(userInput);
+</script>
 
 
 

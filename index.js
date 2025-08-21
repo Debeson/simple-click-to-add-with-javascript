@@ -40,7 +40,7 @@ function autoIncrease(){
     clearInterval(autoCount);
     count = 0;
 
-    autoCount = setInterval(autoadd, 2000)
+    autoCount = setInterval(autoadd, 1000);
     document.getElementById("count").innerHTML = count;
 }
 
@@ -55,17 +55,27 @@ function autoadd(){
 }
 
 
-// check if he value of count is even or odd number
+// check if the value of count is even or odd number
 function checkEvenOdd(){
     
     if(count % 2 === 0){
         number = "Even number";
         document.getElementById("number").innerHTML = number;
+        document.getElementById("number").style.color = "#28a745";
     }else{
-        number = "Odd number"
-        document.getElementById("number").innerText = number
+        number = "Odd number";
+        document.getElementById("number").innerText = number;
+        document.getElementById("number").style.color = "red";
     }
 }
+
+// set the value of count to be from user input
+function setCount(){
+    let userInput = document.getElementById("input").value;
+    count = document.getElementById("count").innerHTML = userInput;
+    checkEvenOdd();
+}
+
 
 
 
